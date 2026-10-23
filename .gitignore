@@ -1,0 +1,15 @@
+# Environment variables (API keys)
+.env
+.env.local
+.env*.local
+
+# Dependencies & Build output
+node_modules/
+__pycache__/
+dist/
+build/
+
+# Editor/System files
+.vscode/
+.idea/
+Thumbs.db
