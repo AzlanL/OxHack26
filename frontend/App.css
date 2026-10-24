@@ -1,0 +1,121 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b1120;
+  color: #f8fafc;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+header p {
+  color: #94a3b8;
+  margin-top: 0;
+}
+
+.dashboard {
+  display: flex;
+  gap: 16px;
+  margin: 30px 0 24px;
+}
+
+.stat {
+  flex: 1;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat span {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.stat strong {
+  font-size: 28px;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.5;
+  background-color: #172338;
+  background-image:
+    linear-gradient(#ffffff10 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff10 1px, transparent 1px);
+  background-size: 10% 10%;
+  border: 1px solid #475569;
+  border-radius: 16px;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+.map-label {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.robot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 0 4px #ffffff20;
+  transition:
+    left 0.6s ease-in-out,
+    top 0.6s ease-in-out;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.mess {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.instructions {
+  margin-top: 20px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.error {
+  color: #f87171;
+}
+
